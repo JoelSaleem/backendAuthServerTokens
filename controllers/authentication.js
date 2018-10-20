@@ -27,7 +27,7 @@ exports.signup = function(req, res, next) {
   }
 
   // If a user with the given email does exist, return an console.error
-  User.findOne({ email: email }, function(error, existingUser) {
+  User.findOne({ email: email }, function(err, existingUser) {
     if (err) return next(err);
 
     // If user already exists, send response — unprocessible data
