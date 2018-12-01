@@ -1,3 +1,10 @@
+// In this app, 2 ways to login
+/*
+  1. Username and password (local-strategy)
+  2. They have previously been authed and therefore we can just
+     use a previously issued token (jwt-strategy)
+*/
+
 const passport = require('passport');
 const User = require('../models/user');
 const config = require('../config');
